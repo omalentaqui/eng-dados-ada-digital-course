@@ -1,0 +1,18 @@
+# > Permissionamento e Views no Banco de Dados
+
+# Permissionamento
+
+Com a tabela já criada, acessar as propriedades e em 'Security' definir os acessos
+à um grupo, e também seus privilégios de acesso aos comandos.
+
+# Criando Views
+
+create view matricula_com_sigilo as
+(
+    select 
+        id_matricula,
+        id_aluno,
+        validade
+    from matricula
+)
+

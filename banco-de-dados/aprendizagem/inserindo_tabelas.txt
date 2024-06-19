@@ -1,0 +1,50 @@
+# > Inserindo Tabelas no Banco de Dados - Postegres
+
+# Criação de Tabelas
+
+Databases -> Schemas -> Tables -> Botão Direito (Create -> Table)
+
+Nomeação, Criação de Colunas (Tipagem dos Dados, Identificar a Chave Primaria e Definição de Nulo)
+
+*** 
+    Sempre utilizar a documentação do Postegres para seguir com a tipagem dos dados corretamente
+    de forma para não ocorrer sobrecarga no banco
+***
+
+create table livro(
+	id_livro integer,
+	nome varchar(15),
+	autor varchar(40),
+	sinopse varchar(500),
+	id_disciplina integer,
+	primary key (id_livro),
+	foreign key (id_disciplina)
+	references disciplinas(id_disciplina)
+)
+
+insert into disciplinas values(
+	1, 'portugues', 'literatura e gramatica'
+)
+
+select * from disciplinas
+
+insert into disciplinas values
+(2, 'matematica', 'algebra e geometria'),
+(3, 'fisica', 'cinematica e dinamica')
+
+# Importando arquivo .CSV para dentro do Banco de Dados
+
+copy disciplinas(id_disciplina, nome, ementa)
+from 'C:\Users\mathe\.cursos\eng-dados-ada-digital-course\banco-de-dados\aprendizagem\disciplinas.csv'
+delimiter ','
+csv header
+
+# Alterando ou Atualizando o Valor de um Elemento (Importante sempre utilizar filtros, comando WHERE)
+
+update disciplinas set nome = 'biologia'
+where id_disciplina = 7
+
+# Deletar algum valor dentro de uma tabela (Importante sempre utilizar filtros, comando WHERE)
+
+delete disciplinas
+where id_disciplina = 8

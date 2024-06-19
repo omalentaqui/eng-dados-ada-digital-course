@@ -1,0 +1,49 @@
+# > Exercícios de Fixação 1
+
+Questão 1
+
+    O comando que se utiliza para criar tabelas no postgreSQL é?
+
+Resposta: CREATE TABLE
+
+
+Questão 2
+
+    Você vai cadastrar 5 produtos no catálogo de jogos em uma loja de games, para isso, 
+    pretende usar uma única query.
+
+    Como você pode fazer isso?
+
+Resposta: Utilizar o comando INSERT INTO, separando por vírgulas os valores subsequentes.
+
+
+Questão 3
+
+    Considere a inserção de um registro que armazenará o nome de uma pessoa, sua idade e a data do cadastro. 
+    Neste caso, quais tipos de dados devem ser inseridos entre aspas?
+
+
+Resposta: nome e data de nascimento
+
+
+Questão 4
+
+    Ao editar uma linha com erro em uma tabela para alunos, você utilizou o comando abaixo para mudar o nome 
+    digitado errado de “Carlo” para “Carlos”.
+
+    UPDATE alunos set nome = ‘Carlos’
+
+    Após executar a query, você percebe que algo de errado aconteceu, o que houve?
+
+Resposta: Todos os alunos agora se chamam Carlos, pois faltou filtrar antes de editar.
+
+
+Questão 5
+
+    Um erro no sistema de cadastros gerou diversos cadastros errôneos que precisam ser excluídos. 
+    Todos os cadastros errados foram feitos no dia 2023-01-10 e pode-se considerar que todos os dados 
+    deste dia apresentam erros.
+
+    Assinale a alternativa que representa uma query para remover esses registros.
+
+Resposta: DELETE FROM cadastro WHERE data = ‘2023-01-10’
