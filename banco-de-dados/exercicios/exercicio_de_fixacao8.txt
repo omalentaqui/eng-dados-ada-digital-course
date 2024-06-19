@@ -1,0 +1,39 @@
+# > Exercícios de Fixação 8
+
+Questão 1
+
+    Em um projeto de desenvolvimento de um sistema de gerenciamento de vendas, você está responsável 
+    por criar consultas SQL que permitam obter informações específicas sobre os clientes e suas compras.
+
+    Durante a implementação, surge a necessidade de obter os nomes dos clientes que realizaram compras 
+    acima de um determinado valor. Você lembra que é possível realizar essa consulta através de uma 
+    técnica chamada subconsulta, onde uma consulta é incorporada dentro de outra.
+
+    Com isso, você precisa identificar o comando específico utilizado para realizar essa ação.
+
+    Qual é o comando que você usaria para realizar uma consulta dentro de outra consulta SELECT?
+
+Resposta: SELECT.
+
+
+Questão 2
+
+    Seu gerente solicitou a você insights valiosos de diferentes tabelas em seu banco de dados, 
+    como: uma tabela de produtos, uma tabela de vendas e uma tabela de clientes. Para isso, é 
+    essencial utilizar o comando correto que permita realizar a junção entre as tabelas.
+
+    Qual é o comando que você usaria para realizar uma junção entre duas ou mais tabelas em uma 
+    consulta SELECT?
+
+Resposta: JOIN.
+
+
+Questão 3
+
+    A nomenclatura das tabelas na empresa na qual você trabalha está em um padrão estranho e 
+    não intuitivo. Você decide alterar para conseguir realizar as consultas com maior clareza.
+
+    Qual é o comando que você usaria para atribuir um alias a uma coluna ou tabela em uma consulta 
+    SELECT?
+
+Resposta: AS.

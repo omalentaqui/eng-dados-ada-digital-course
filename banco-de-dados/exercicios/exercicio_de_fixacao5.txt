@@ -1,0 +1,33 @@
+# > Exercícios de Fixação 5
+
+Questão 1
+
+    Você criou uma tabela de cliente, e agora digamos que você precisa inserir dados nela.
+
+    Qual é o comando SQL que você usaria para inserir um novo registro na tabela clientes com 
+    os valores 'João' para a coluna 'nome' e 'joao@email.com' para a coluna 'email'? 
+    (É obrigatório informar as colunas no comando)
+
+Resposta: INSERT INTO clientes (nome, email) VALUES ('João', 'joao@email.com')
+
+
+Questão 2
+
+    Houve algumas mudanças de preços na loja online da empresa na qual você trabalha. Seu líder 
+    solicitou atualização dos preços, mas com algumas condições.
+
+    Qual é o comando SQL você usaria para atualizar o valor da coluna 'preco' para 25.99 na tabela
+    'produtos' onde o 'id' é igual a 1?
+
+Resposta: UPDATE produtos SET preco = 25.99 WHERE id = 1
+
+
+Questão 3
+
+    Seu gerente informou que você deve realizar a exclusão de alguns registros de dados que não são 
+    mais relevantes para a empresa.
+
+    Qual é o comando SQL você usaria para excluir todos os registros da tabela 'pedidos' onde o 
+    'valor_total' é menor que 100?
+
+Resposta: DELETE FROM pedidos WHERE valor_total < 100.

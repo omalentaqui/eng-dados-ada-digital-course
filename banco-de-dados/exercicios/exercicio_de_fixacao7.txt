@@ -1,0 +1,33 @@
+# > Exercícios de Fixação 7
+
+Questão 1
+
+    Entrou um novo funcionário na empresa em que você trabalha e você ficou com a missão de 
+    conceder as permissões a ele.
+
+    Qual é o comando que você usaria SQL para conceder permissões em um objeto no banco de 
+    dados?
+
+Resposta: GRANT
+
+
+Questão 2
+
+    Um funcionário da empresa que você trabalha mudou de área de TI para RH. Com isso, ele não precisa 
+    ter certas permissões que antes faziam sentido. Você precisa realizar essa revogação de permissões.
+
+    Qual é o comando SQL que você usaria para revogar permissões de um usuário em um objeto no banco de 
+    dados?
+
+
+Resposta: REVOKE.
+
+Questão 3
+
+    Uma funcionária da empresa na qual você trabalha foi promovida a engenheira de dados senior, com isso, 
+    ela possui mais permissões no banco de dados e você terá que conceder essas novas permissões a ela.
+
+    Qual é o comando SQL que você usaria para conceder permissões de alteração de estrutura de tabela para 
+    um usuário?
+
+Resposta: GRANT ALTER TABLE ON tabela TO usuário.

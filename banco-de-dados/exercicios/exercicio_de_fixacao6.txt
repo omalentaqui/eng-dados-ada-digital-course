@@ -1,0 +1,36 @@
+# > Exercícios de Fixação 6
+
+Questão 1
+
+    Você diariamente roda uma consulta para analisar os dados do dia anterior e percebe que 
+    ela demora 8 min para retornar os dados. Nisso, você pesquisa e percebe que existem algumas 
+    alternativas para analisar no detalhe o que pode estar deixando ela com perfomance ruim.
+
+    Qual é o comando SQL você usaria para analisar o plano de execução de uma consulta no banco 
+    de dados?
+
+Resposta: EXPLAIN PLAN.
+
+
+Questão 2
+
+    Você notou que existem alguns dados equivocados em uma tabela na empresa em que você trabalha. 
+    A primeira coisa que te pedem é para bloquear a tabela para analisar o por quê daqueles dados 
+    estarem errados.
+
+    Qual o comando SQL você usaria para bloquear uma tabela no banco de dados?
+
+Resposta: LOCK TABLE.
+
+
+Questão 3
+
+    Você notou uma queda de perfomance quando realiza uma consulta com um filtro específico e 
+    decididiu investigar com o comando EXPLAIN PLAN.
+
+    Dada esta query: 'EXPLAIN PLAN FOR SELECT * FROM products WHERE price > 100' responda: qual 
+    das seguintes afirmações é verdadeira sobre o comando EXPLAIN PLAN neste contexto?
+
+Resposta: O comando EXPLAIN PLAN exibe o plano de execução detalhado para a consulta, incluindo a 
+ordem das operações. Nesse caso estamos buscando apenas dados para analisar somente onde o preço é 
+maior que 100.

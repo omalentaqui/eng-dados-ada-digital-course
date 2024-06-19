@@ -1,0 +1,36 @@
+# > Exercícios de Fixação 9
+
+Questão 1
+
+    Digamos que na empresa na qual você trabalha surgem muitas tarefas que envolvem a execução de 
+    consultas complexas, atualizações de dados e lógica de negócio específica. Ao notar que essas 
+    tarefas podem se tornar trabalhosas e propensas a erros se realizado manualmente em cada parte 
+    do código, sugeriu de utilizar a stored procedure para realizar essas consultas.
+
+    Qual é o objetivo principal de uma Stored Procedure no SQL?
+
+Resposta: Encapsular uma ou mais instruções SQL em um bloco de código reutilizável e de execução 
+eficiente no banco de dados. Com isso permite realizar consultas complexas em uma única transação.
+
+
+Questão 2
+
+    Para otimizar o desempenho e a eficiência do banco de dados, você decide implementar algumas 
+    Stored Procedures.
+
+    Qual é a forma de armazenamento de uma Stored Procedure no banco de dados?
+
+Resposta: Como um objeto de banco de dados.
+
+
+Questão 3
+
+    Você está trabalhando como desenvolvedor em um projeto para uma grande empresa de varejo. 
+    Nesse projeto, você precisou criar uma Stored Procedure em PostgreSQL chamada 
+    'calcular_total_sp_vendas' que realiza cálculos complexos para obter o total de vendas em um 
+    determinado local. Agora, você está na fase de implementação da aplicação e precisa executar 
+    essa Stored Procedure para obter o resultado desejado.
+
+    Qual é o comando que você usaria para executar uma Stored Procedure?
+
+Resposta: EXECUTE.
