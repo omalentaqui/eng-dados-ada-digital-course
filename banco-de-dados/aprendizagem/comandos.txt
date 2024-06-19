@@ -1,0 +1,36 @@
+# > Comandos no SQL
+
+# DDL - Data Definition Language
+-> São os comandos que interagem com os objetos do banco.
+
+CREATE
+ALTER
+DROP
+
+# DML - Data Manipulation Language
+-> São os comandos que interagem com os dados dentro das tabelas.
+
+INSERT
+UPDATE
+DELETE
+EXPLAIN PLAN
+LOCK TABLE
+
+# DCL - Data Query Language
+-> São os comandos para controlar a parte de segurança do banco de dados.
+
+GRANT
+REVOKE
+DENY
+
+# DQL - Data Query Language
+-> São os comandos de consulta.
+
+SELECT
+
+# DTL - Data Transaction Language
+-> São os comandos para controle de transação.
+
+BEGIN TRANSACTION
+COMMIT
+ROLLBACK

@@ -1,0 +1,78 @@
+-- # > Contruindo um novo banco de dados dentro do PostegreSQL
+
+-- Criar um novo banco de dados
+
+create database aula_ada;
+
+
+-- criar schema
+-- permite a coleção de objetos dentro de um database e separar para cada aplicação.
+
+create schema study;
+
+
+-- criar tabela
+
+create table study.instrutores_ada(
+    id serial primary key,
+    nome varchar(50) not null,
+    email varchar(50) not null,
+    valor_hora integer null,
+    certificados varchar(50)
+);
+
+select * from study.instrutores_ada;
+
+
+create table study.cursos(
+    id serial primary key,
+    nome varchar(50) not null,
+    requisito varchar(255) not null,
+    carga_horaria smallint null,
+    preco double precision null
+);
+
+
+-- criar tabela de alunos
+
+create table study.alunos(
+    id serial primary key,
+    cpf char(11) not null,
+    nome varchar(50) not null,
+    email varchar(50) not null,
+    fone char(14) not null,
+    data_nascimento date null
+);
+
+-- criar tabela de turmas
+
+create table study.turmas(
+    id serial primary key,
+    instrutores_id int not null,
+    cursos_id integer not null,
+    data_inicio date,
+    data_fim date,
+    carga_horaria smallint,
+    foreign key (cursos_id)
+    references study.cursos(id),
+    foreign key (instrutores_id)
+    references study.instrutores_ada(id)
+);
+
+select * from study.turmas;
+
+
+-- criar tabela de matriculas
+
+create table study.matriculas(
+    id serial primary key,
+    turmas_id integer not null,
+    alunos_id integer not null,
+    data_matricula date null,
+    constraint fk_turmas_id
+    foreign key (turmas_id)
+    references study.turmas(id),
+    constraint fk_alunos_id
+    foreign key (alunos_id)
+    references study.alunos(id)
+);

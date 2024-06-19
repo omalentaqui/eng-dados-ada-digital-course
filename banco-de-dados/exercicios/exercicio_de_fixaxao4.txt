@@ -1,0 +1,36 @@
+# > Exercícios de Fixação 3
+
+Questão 1
+
+    Vamos considerar um contexto onde você está trabalhando em um sistema de gerenciamento 
+    de clientes para uma empresa. Você notou que na tabela de clientes não temos a coluna 
+    de idade e sugeriu a inclusão, assim que seu gerente concordou com essa ideia, você vai 
+    ter que adicionar essa coluna nova.
+
+    Qual o comando SQL que você usaria para adicionar uma coluna chamada idade do tipo INT 
+    à tabela clientes?
+
+
+Resposta: ALTER TABLE clientes ADD COLUMN idade INT
+
+
+Questão 2
+
+    Você reparou que a nomenclatura ideal para uma tabela é diferente da que está atualmente 
+    e deseja trocar.
+
+    Qual é o comando SQL que você usaria para alterar o nome da tabela produtos para itens?
+
+
+Resposta: ALTER TABLE produtos RENAME TO itens
+
+
+Questão 3
+
+    A empresa em que você trabalha decidiu que não precisa mais colher informações de telefone 
+    dos clientes. Com isso, você recebe a tarefa de excluir essa coluna.
+
+    Qual é o comando SQL que você usaria para excluir a coluna telefone da tabela clientes?
+
+
+Resposta: ALTER TABLE clientes DROP COLUMN telefone

@@ -1,0 +1,38 @@
+# > Exercícios de Fixação 3
+
+Questão 1
+
+    Imagine que você está trabalhando em um projeto de desenvolvimento de um sistema de gerenciamento de 
+    cursos online. Como parte desse projeto, você precisa criar um banco de dados e um schema para armazenar 
+    informações relacionadas aos estudos e às aulas de SQL.
+
+    Qual comando você usaria para criar um database e um schema com o nome 'estudos' e 'aula_sql', 
+    respectivamente?
+
+Resposta: create database estudos; e create schema aula_sql.
+
+
+Questão 2
+
+    Um gerente de uma loja precisa armazenar as informações de cliente e para isso contrata um engenheiro de 
+    dados. Como parte desse projeto, você precisa criar uma tabela chamada 'clientes' dentro do esquema 
+    'aula_sql', que armazenará informações sobre os clientes da empresa.
+
+    Qual comando você usaria para criar uma tabela chamada 'clientes'(não se esquecendo de especificar o schema 
+    aula_sql) com as colunas 'id' (inteiro, chave primária, auto incrementável), 'nome' (texto), 
+    'email' (texto), 'telefone' (texto) e 'endereco' (texto)?
+
+Resposta: CREATE TABLE aula_sql.clientes (id SERIAL PRIMARY KEY, nome VARCHAR(50), email VARCHAR(50), 
+telefone VARCHAR(20), endereco VARCHAR(100))
+
+
+Questão 3
+
+    Depois de criada a tabela de clientes, o gerente solicitou uma outra tabela de produtos para uma loja 
+    online.
+
+    Como parte desse projeto, qual comando você usaria para criar uma tabela chamada produtos(não se esquecendo 
+    de usar o schema aula_sql) com as colunas id (inteiro, chave primária, auto incrementável), nome (texto), 
+    preco (decimal) e estoque (inteiro)?
+
+Resposta: CREATE TABLE aula_sql.produtos ( id SERIAL PRIMARY KEY, nome VARCHAR(50), preco DECIMAL(10,2), estoque INT)
